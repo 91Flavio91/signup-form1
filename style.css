@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-color-primary: #f0f8ff;
+
+    --border-color-primary: #f0f8ff;
+}
+
 body {
     height: 100vh;
 
@@ -63,4 +69,26 @@ fieldset {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 5%;
+}
+
+label {
+    padding: 0.5em 0.5em 0em;
+
+    font-size: 1rem;;
+
+    background-color: transparent;
+
+    color: var(--font-color-primary);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--border-color-primary);
+    padding: 0.5em 0.5em 0em 0em;
+
+    font-size: 1.2rem;
+
+    color: var(--font-color-primary);
+
+    background: transparent;
 }
