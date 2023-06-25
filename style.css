@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Optimus Princeps';
+    font-weight: 500;
+    src: url(custom-fonts/OptimusPrinceps/OptimusPrinceps-medium.woff2) format('woff2'),
+        url(custom-fonts/OptimusPrinceps/OptimusPrinceps-medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Vesper Libre';
+    src: url(custom-fonts/VesperLibre/VesperLibre-medium.woff2) format('woff2'),
+        url(custom-fonts/VesperLibre/VesperLibre-medium.woff) format('woff');
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,6 +19,9 @@
 }
 
 :root {
+    --font-family-optimus: 'Optimus Princeps';
+    --font-family-vesper: 'Vesper Libre';
+
     --font-color-primary: #f0f8ff;
 
     --border-color-primary: #f0f8ff;
@@ -82,7 +98,9 @@ label {
 
     padding: 0.5em 0.5em 0em;
 
-    font-size: 1rem;;
+    font-family: var(--font-family-optimus);
+    font-weight: 500;
+    font-size: 1rem;
 
     background-color: transparent;
 
@@ -94,6 +112,7 @@ input {
     border-bottom: 1px solid var(--border-color-primary);
     padding: 0.5em 0.5em 0em 0em;
 
+    font-family: var(--font-family-vesper);
     font-size: 1.2rem;
 
     color: var(--font-color-primary);
