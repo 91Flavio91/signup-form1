@@ -71,7 +71,15 @@ fieldset {
     gap: 5%;
 }
 
+fieldset div {
+    position: relative;
+}
+
 label {
+    position: absolute;
+    top: -30%;
+    left: -4%;
+
     padding: 0.5em 0.5em 0em;
 
     font-size: 1rem;;
