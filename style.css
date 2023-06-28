@@ -39,6 +39,8 @@ body {
 }
 
 h1 {
+    position: relative;
+
     align-self: center;
 
     font-family: var(--font-family-optimus);
@@ -47,6 +49,38 @@ h1 {
     letter-spacing: 0.1rem;
 
     color: var(--font-color-primary);
+}
+
+h1::before {
+    width: 50%;
+    height: 2px;
+
+    position: absolute;
+    top: 50%;
+    left: -65%;
+
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+
+    content: '';
+    background: linear-gradient(90deg, rgba(240, 248, 255, 1), rgba(0, 0, 0, 0)),
+        transparent;
+}
+
+h1::after {
+    width: 50%;
+    height: 2px;
+
+    position: absolute;
+    top: 50%;
+    left: 115%;
+
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+
+    content: '';
+    background: linear-gradient(270deg, rgba(240, 248, 255, 1), rgba(0, 0, 0, 0)),
+        transparent;
 }
 
 .form-container {
