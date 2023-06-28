@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'Optimus Princeps';
+    font-weight: 600;
+    src: url(custom-fonts/OptimusPrinceps/OptimusPrinceps-semibold.woff2) format('woff2'),
+        url(custom-fonts/OptimusPrinceps/OptimusPrinceps-semibold.woff) format('woff');
+}
+
+@font-face {
     font-family: 'Vesper Libre';
     src: url(custom-fonts/VesperLibre/VesperLibre-medium.woff2) format('woff2'),
         url(custom-fonts/VesperLibre/VesperLibre-medium.woff) format('woff');
@@ -169,4 +176,12 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    border-radius: 1em;
+    padding: 1.5em 2.5em;
+
+    font-family: var(--font-family-optimus);
+    font-weight: 600;
 }
