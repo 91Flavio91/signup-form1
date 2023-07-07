@@ -222,6 +222,8 @@ span::after {
     font-family: var(--font-family-vesper);
     font-size: 1rem;
 
+    color: var(--font-color-primary);
+
     transition: all 1s;
 }
 
