@@ -141,7 +141,7 @@ fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 5%;
+    gap: 1em;
 }
 
 fieldset div {
