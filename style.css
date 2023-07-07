@@ -206,3 +206,33 @@ input:not(:focus):not(:placeholder-shown):invalid+label {
 input:not(:focus):not(:placeholder-shown):invalid {
     border-bottom: 1px solid var(--border-color-wrong-value)
 }
+
+span {
+    position: relative;
+}
+
+
+span::after {
+    position: absolute;
+    content: '';
+
+    font-family: var(--font-family-vesper);
+    font-size: 1rem;
+
+    transition: all 1s;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid+label[for='email']+span::after {
+    content: 'Please, enter a valid gmail address.';
+    color: var(--font-color-wrong-value);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid+label[for='phone']+span::after {
+    content: 'Please, enter only digits.';
+    color: var(--font-color-wrong-value);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid+label[for='password']+span::after {
+    content: 'Please, enter a valid password';
+    color: var(--font-color-wrong-value);
+}
