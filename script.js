@@ -14,4 +14,30 @@ const checkPassword = function (e) {
 
 }
 
+const checkConfirmPassword = function (e) {
+
+    if (!passwordInput.className || passwordInput.className === 'empty') {
+        e.target.className = ('no-password');
+        labelForConfirmPasswordInput.className = 'no-password';
+        spanConfirmPasswordInput.className = 'no-password';
+    }
+    else if (passwordInput.className === 'invalid-password') {
+        e.target.className = ('wrong-password');
+        labelForConfirmPasswordInput.className = 'wrong-password';
+        spanConfirmPasswordInput.className = 'wrong-password';
+    }
+    else if (passwordInput.className === 'valid-password' && this.value !== passwordInput.value) {
+        e.target.className = 'not-match';
+        labelForConfirmPasswordInput.className = 'not-match';
+        spanConfirmPasswordInput.className = 'not-match';
+    }
+    else if (passwordInput.className === 'valid-password' && this.value === passwordInput.value) {
+        e.target.className = 'match';
+        labelForConfirmPasswordInput.className = 'match';
+        spanConfirmPasswordInput.className = '';
+
+    }
+}
+
 passwordInput.addEventListener('focusout', checkPassword);
+confirmPasswordInput.addEventListener('focusout', checkConfirmPassword);
