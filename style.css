@@ -165,6 +165,8 @@ label {
     background-color: transparent;
 
     color: var(--font-color-primary);
+
+    transition: all 0.5s;
 }
 
 input {
@@ -178,6 +180,8 @@ input {
     color: var(--font-color-primary);
 
     background: transparent;
+
+    transition: all 0.5s;
 }
 
 .submit-button {
@@ -224,7 +228,7 @@ span::after {
 
     color: var(--font-color-primary);
 
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid+label[for='email']+span::after {
