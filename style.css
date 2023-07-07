@@ -284,3 +284,11 @@ input#confirm-password:not(:focus):not(:placeholder-shown)+label+span.not-match:
     content: 'Please, make sure your passwords match.';
     color: var(--font-color-wrong-value)
 }
+
+input#confirm-password:not(:focus):not(:placeholder-shown).match {
+    border-bottom: 1px solid var(--border-color-correct-value)
+}
+
+input#confirm-password:not(:focus):not(:placeholder-shown)+label.match {
+    color: var(--font-color-correct-value);
+}
