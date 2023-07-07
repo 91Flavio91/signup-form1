@@ -105,6 +105,7 @@ h1::after {
     left: 0;
 
     margin: auto;
+    padding: 1.5em 2.5em;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 1);
@@ -170,6 +171,8 @@ label {
 }
 
 input {
+    width: 200px;
+
     border: none;
     border-bottom: 1px solid var(--border-color-primary);
     padding: 0.5em 0.5em 0em 0em;
@@ -216,6 +219,7 @@ input:not(:focus):not(:placeholder-shown):invalid+label {
 input:not(:focus):not(:placeholder-shown):invalid {
     border-bottom: 1px solid var(--border-color-wrong-value)
 }
+
 /* ------------------------------------------------------------ */
 
 
@@ -252,6 +256,7 @@ input:not(:focus):not(:placeholder-shown):invalid+label[for='password']+span::af
     content: 'Please, enter a valid password';
     color: var(--font-color-wrong-value);
 }
+
 /* ----------------------------------------------------------------------------------- */
 
 
@@ -309,4 +314,5 @@ input#confirm-password:not(:focus):not(:placeholder-shown).match {
 input#confirm-password:not(:focus):not(:placeholder-shown)+label.match {
     color: var(--font-color-correct-value);
 }
+
 /* ---------------------------------------------------------------------------------------------- */
