@@ -198,6 +198,9 @@ button {
     font-weight: 600;
 }
 
+/* ----- This section will style all the inputs and their label but the second password input.
+The first two are for when the input is valid and out of focus.
+The last two are for when the input is invalid and out of focus ----- */
 input:not(:focus):valid+label {
     color: var(--font-color-correct-value)
 }
@@ -213,11 +216,15 @@ input:not(:focus):not(:placeholder-shown):invalid+label {
 input:not(:focus):not(:placeholder-shown):invalid {
     border-bottom: 1px solid var(--border-color-wrong-value)
 }
+/* ------------------------------------------------------------ */
 
+
+/* ---------- This section will style the span pseudoelement (besides 
+that one regarding the second password input) and will give it a content
+when the input is invalid and out of focus ---------- */
 span {
     position: relative;
 }
-
 
 span::after {
     position: absolute;
@@ -245,7 +252,11 @@ input:not(:focus):not(:placeholder-shown):invalid+label[for='password']+span::af
     content: 'Please, enter a valid password';
     color: var(--font-color-wrong-value);
 }
+/* ----------------------------------------------------------------------------------- */
 
+
+/* ---------- This section will style the second password input, its label and the span pseudoelement
+following the label with the classes added with js. ---------- */
 input#confirm-password:not(:focus):not(:placeholder-shown).no-password {
     border-bottom: 1px solid var(--border-color-wrong-value)
 }
@@ -258,6 +269,8 @@ input#confirm-password:not(:focus):not(:placeholder-shown)+label+span.no-passwor
     content: 'Please, enter a password in the field on your left';
     color: var(--font-color-wrong-value)
 }
+
+
 
 input#confirm-password:not(:focus):not(:placeholder-shown).wrong-password {
     border-bottom: 1px solid var(--border-color-wrong-value)
@@ -272,6 +285,8 @@ input#confirm-password:not(:focus):not(:placeholder-shown)+label+span.wrong-pass
     color: var(--font-color-wrong-value)
 }
 
+
+
 input#confirm-password:not(:focus):not(:placeholder-shown).not-match {
     border-bottom: 1px solid var(--border-color-wrong-value)
 }
@@ -285,6 +300,8 @@ input#confirm-password:not(:focus):not(:placeholder-shown)+label+span.not-match:
     color: var(--font-color-wrong-value)
 }
 
+
+
 input#confirm-password:not(:focus):not(:placeholder-shown).match {
     border-bottom: 1px solid var(--border-color-correct-value)
 }
@@ -292,3 +309,4 @@ input#confirm-password:not(:focus):not(:placeholder-shown).match {
 input#confirm-password:not(:focus):not(:placeholder-shown)+label.match {
     color: var(--font-color-correct-value);
 }
+/* ---------------------------------------------------------------------------------------------- */
