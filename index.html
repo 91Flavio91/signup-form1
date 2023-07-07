@@ -42,7 +42,7 @@
                 
                 <fieldset>
                     <div>
-                        <input type="password" name="" id="password" placeholder=" " pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required>
+                        <input type="password" name="" id="password" placeholder=" " pattern="(?=^.{8,16}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                         <label for="password">Password</label>
                         <span></span>
                     </div>
