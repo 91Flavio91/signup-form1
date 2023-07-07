@@ -271,3 +271,16 @@ input#confirm-password:not(:focus):not(:placeholder-shown)+label+span.wrong-pass
     content: 'Please, enter a VALID password in the field on your left';
     color: var(--font-color-wrong-value)
 }
+
+input#confirm-password:not(:focus):not(:placeholder-shown).not-match {
+    border-bottom: 1px solid var(--border-color-wrong-value)
+}
+
+input#confirm-password:not(:focus):not(:placeholder-shown)+label.not-match {
+    color: var(--font-color-wrong-value)
+}
+
+input#confirm-password:not(:focus):not(:placeholder-shown)+label+span.not-match::after {
+    content: 'Please, make sure your passwords match.';
+    color: var(--font-color-wrong-value)
+}
