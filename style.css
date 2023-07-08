@@ -349,6 +349,7 @@ label[for='password']~span:nth-of-type(2) img {
     font-family: var(--font-family-vesper);
 
     background: var(--bgc-primary);
+    opacity: 0;
     box-shadow: 2px -2px 2px #d5d5d5bf;
 
     transition: all 0.3s;
