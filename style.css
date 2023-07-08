@@ -370,3 +370,7 @@ label[for='password']~span:nth-of-type(2) img {
 
     transform: rotate(45deg);
 }
+
+.tooltip-visible {
+    opacity: 1;
+}
