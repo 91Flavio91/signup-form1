@@ -316,3 +316,17 @@ input#confirm-password:not(:focus):not(:placeholder-shown)+label.match {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
+
+label[for='password']~span:nth-of-type(2) {
+    width: 1.2em;
+    height: 1.2em;
+    
+    position: absolute;
+    top: -18%;
+    left: 40%;
+}
+
+label[for='password']~span:nth-of-type(2) img {
+    width: 1.2em;
+    height: 1.2em;
+}
