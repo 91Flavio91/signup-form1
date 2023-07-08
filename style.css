@@ -357,6 +357,7 @@ label[for='password']~span:nth-of-type(2) img {
 
     background: var(--bgc-primary);
     opacity: 0;
+    visibility: hidden;
     box-shadow: 2px -2px 2px #d5d5d5bf;
 
     transition: all 0.3s;
@@ -380,4 +381,5 @@ label[for='password']~span:nth-of-type(2) img {
 
 .tooltip-visible {
     opacity: 1;
+    visibility: visible;
 }
