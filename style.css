@@ -203,6 +203,10 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background-color: transparent;
+    color: var(--font-color-primary);
+}
 /* ----- This section will style all the inputs and their label but the second password input.
 The first two are for when the input is valid and out of focus.
 The last two are for when the input is invalid and out of focus ----- */
