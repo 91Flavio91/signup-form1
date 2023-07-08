@@ -26,6 +26,8 @@
 }
 
 :root {
+    --bgc-primary: #f0f8ff;
+
     --font-family-optimus: 'Optimus Princeps';
     --font-family-vesper: 'Vesper Libre';
 
@@ -329,4 +331,41 @@ label[for='password']~span:nth-of-type(2) {
 label[for='password']~span:nth-of-type(2) img {
     width: 1.2em;
     height: 1.2em;
+}
+
+.tooltip {
+    width: 20em;
+
+    position: absolute;
+    z-index: 1;
+    top: -13em;
+    left: 8em;
+
+    border-top: 0.1px solid #a3a3a3;
+    border-right: 0.05px solid #a3a3a3;
+    border-radius: 0.2em;
+    padding: 2em 2em 2em 3em;
+
+    font-family: var(--font-family-vesper);
+
+    background: var(--bgc-primary);
+    box-shadow: 2px -2px 2px #d5d5d5bf;
+
+    transition: all 0.3s;
+}
+.tooltip ul {
+    padding-left: 2em;
+}
+.tooltip::after {
+    position: absolute;
+    left: -3%;
+    top: 73%;
+
+    content: '';
+    height: 1.2em;
+    width: 1.2em;
+    
+    background-color: var(--bgc-primary);
+
+    transform: rotate(45deg);
 }
