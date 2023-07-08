@@ -196,11 +196,14 @@ input {
 }
 
 button {
+    border: 2px solid var(--border-color-primary);
     border-radius: 1em;
     padding: 1.5em 2.5em;
 
     font-family: var(--font-family-optimus);
     font-weight: 600;
+
+    transition: all 0.5s;
 }
 
 button:hover {
