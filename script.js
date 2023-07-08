@@ -41,3 +41,21 @@ const checkConfirmPassword = function (e) {
 
 passwordInput.addEventListener('focusout', checkPassword);
 confirmPasswordInput.addEventListener('focusout', checkConfirmPassword);
+
+
+
+
+
+const infoSymbol = document.querySelector('.info-symbol');
+
+const showTooltip = function () {
+    const tooltip = document.querySelector('.tooltip');
+    tooltip.classList.add('tooltip-visible');
+}
+const hideTooltip = function () {
+    const tooltip = document.querySelector('.tooltip');
+    tooltip.classList.remove('tooltip-visible');
+}
+
+infoSymbol.addEventListener('mouseenter', showTooltip);
+infoSymbol.addEventListener('mouseleave', hideTooltip);
