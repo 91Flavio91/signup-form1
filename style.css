@@ -203,6 +203,8 @@ button {
     font-family: var(--font-family-optimus);
     font-weight: 600;
 
+    background-color: var(--bgc-primary);
+
     transition: all 0.5s;
 }
 
